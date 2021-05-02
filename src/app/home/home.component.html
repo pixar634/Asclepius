@@ -1,0 +1,118 @@
+<div class="content" role="main">
+    <!-- Resources -->
+    <h2 style="font-weight: bold;">Resources</h2>
+    <p>Here are some links to help you get started:</p>
+
+    <div class="card-container">
+        <div class="card">
+            <mat-icon>
+                <span class="material-icons-outlined" style="color:red;font-size: larger;">
+                    coronavirus
+                </span>
+            </mat-icon>
+
+            <span>What is covid19?</span>
+
+            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+        </div>
+
+        <div class="card">
+            <mat-icon>
+                <span style="color:blue;" class="material-icons-outlined">
+                    health_and_safety
+                </span>
+            </mat-icon>
+
+            <span>Vaccinations</span>
+
+            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+        </div>
+
+        <div class="card">
+            <mat-icon>
+                <span style="color:green;" class="material-icons-outlined">
+                    recommend
+                </span>
+            </mat-icon>
+
+            <span>Care And Cautions</span>
+
+            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+        </div>
+
+    </div>
+
+    <!-- Next Steps -->
+    <h2 style="font-weight: bold;">Next Steps</h2>
+    <p>Verified/Non-verified sources for the following categories:</p>
+
+
+    <div style="display: flex;flex-direction: row;align-items: center;">
+        <input type="hidden" #selection>
+
+        <div class="card-container">
+            <div class="card card-small" (click)="selection.value = 'component'" tabindex="0"
+                routerLink="/table/hospitals">
+                <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                </svg>
+                <mat-icon>
+                    <span class="material-icons-outlined" style="color: royalblue;">
+                        local_hospital
+                    </span>
+                </mat-icon>
+
+                <span>Hospitals</span>
+            </div>
+
+            <div class="card card-small" (click)="selection.value = 'material'" tabindex="0" routerLink="/table/oxygen">
+                <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                </svg>
+                <mat-icon>
+                    <span class="material-icons-outlined" style="color: royalblue;">
+                        motion_photos_on
+                    </span>
+                </mat-icon>
+                <span>Oxygen</span>
+            </div>
+
+            <div class="card card-small" (click)="selection.value = 'pwa'" tabindex="0" routerLink="/table/ambulance">
+                <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                </svg>
+                <mat-icon>
+                    <span class="material-icons-outlined" style="color: royalblue;">
+                        airport_shuttle
+                    </span>
+                </mat-icon>
+
+                <span>Ambulance</span>
+            </div>
+
+            <div class="card card-small" (click)="selection.value = 'dependency'" tabindex="0" routerLink="/table/test">
+                <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                </svg>
+                <mat-icon>
+                    <span class="material-icons-outlined" style="color: royalblue;">
+                        plagiarism
+                    </span>
+                </mat-icon>
+                <span>Tests</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>

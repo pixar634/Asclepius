@@ -1,0 +1,67 @@
+@import '~@angular/material/theming';
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+$custom-typography: mat-typography-config(
+  $font-family: 'Barlow'
+);
+@include mat-core($custom-typography);
+// .mat-toolbar.mat-primary{
+//   background: #3bcc7c;
+// }
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+footer {
+  // margin-top: 8px;
+  display: flex;
+  align-items: center;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:transparent;
+  //  color: white;
+  //  text-align: center;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+}
+.fullpage {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  // background: red;
+} 
+// @media (min-width: 576px) {
+//   .fullpage {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+// @media (min-width: 768px) {
+//   .fullpage {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+// @media (min-width: 992px) {
+//   .fullpage {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+@media (min-width: 1200px) {
+  .fullpage {
+      width: 100%;
+      height: 100%;
+  }
+}
