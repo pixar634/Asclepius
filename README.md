@@ -1,3 +1,3 @@
-# Kolkatacovidremedy
+# KolkataCovidRemedy
 
 #youllneverwalkalone
